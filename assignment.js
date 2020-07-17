@@ -28,26 +28,26 @@ function woodCalculator(chair, table, bed){
 function brickCalculator(floor){
    
     if(floor <= 10){
-     var FirstTenBricks = 1000* 15;
-     var totalBricks  = FirstTenBricks * floor;
+     var firstTenBricks = 1000* 15;
+     var totalBricks  = firstTenBricks * floor;
      return totalBricks;
     }
     else if(floor <= 20 && floor > 10){
-      var FirstTenBricks = 1000 * 15 * 10;
+      var firstTenBricks = 1000 * 15 * 10;
       var secondTenBricks = 1000 * 12 * (floor-10);
-      var totalBricks = FirstTenBricks + secondTenBricks;
+      var totalBricks = firstTenBricks + secondTenBricks;
       return totalBricks;
     }
      else{
-      var FirstTenBricks = 1000 * 15 * 10;
+      var firstTenBricks = 1000 * 15 * 10;
       var secondTenBricks = 1000 * 12 * 10;
-      var ThirdTenBricks = 1000 * 10 * (floor - 20);
-      var totalBricks = FirstTenBricks + secondTenBricks + ThirdTenBricks;
+      var thirdTenBricks = 1000 * 10 * (floor - 20);
+      var totalBricks = firstTenBricks + secondTenBricks + thirdTenBricks;
       return totalBricks;
     }
     
 }
-var totalFloorBrick = brickCalculator(26);
+var totalFloorBrick = brickCalculator(15);
 console.log(totalFloorBrick);
 
 
